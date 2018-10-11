@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
   s.subspec 'Main' do |ss|
     ss.source_files     = "ios/ReactNativeAudioStreaming.{h,m}"
     ss.dependency       'RNAudioStreaming/StreamingKit'
+    ss.dependency       'React'
   end
 
   s.subspec 'StreamingKit' do |ss|
