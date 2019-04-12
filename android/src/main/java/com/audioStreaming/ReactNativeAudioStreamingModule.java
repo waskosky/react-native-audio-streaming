@@ -39,9 +39,8 @@ public class ReactNativeAudioStreamingModule extends ReactContextBaseJavaModule
   }
 
   public Class<?> getClassActivity() {
-    Activity activity = getCurrentActivity();
-    if (this.clsActivity == null && activity != null) {
-        this.clsActivity = activity.getClass();
+    if (this.clsActivity == null && getCurrentActivity() != null) {
+      this.clsActivity = getCurrentActivity().getClass();
     }
     return this.clsActivity;
   }
